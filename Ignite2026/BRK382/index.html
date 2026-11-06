@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>BRK382 resources | Deploy and manage Power Platform at scale | Microsoft Ignite 2026</title>
+<meta name="description" content="Follow-up resources for Microsoft Ignite 2026 session BRK382: Deploy and manage Power Platform at scale.">
+<style>
+:root {
+  --bg: #f6f7fb; --surface: #ffffff; --ink: #14161f; --muted: #545a6b;
+  --line: #e2e5ee; --accent: #5b2bd6; --accent-soft: #efe9ff; --hero1: #1b1035; --hero2: #3b1f8a;
+  --hero-ink: #ffffff; --shadow: 0 1px 2px rgba(20,22,31,.06), 0 6px 18px rgba(20,22,31,.06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1016; --surface: #181a24; --ink: #eceef5; --muted: #a3a8ba;
+    --line: #2a2d3b; --accent: #b39cff; --accent-soft: #241d3d; --hero1: #140b2b; --hero2: #2c1870;
+    --hero-ink: #ffffff; --shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1040px; margin-inline: auto; padding-inline: 24px; }
+header.hero { background: linear-gradient(135deg, var(--hero1), var(--hero2)); color: var(--hero-ink);
+  padding-block: 64px 56px; }
+.eyebrow { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; opacity: .85; margin: 0 0 12px; }
+.code { display: inline-block; font-weight: 700; background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 2px 12px; margin-inline-end: 8px; }
+h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.1; margin: 0 0 16px; letter-spacing: -.01em; max-width: 18ch; }
+.lede { font-size: 18px; max-width: 60ch; margin: 0 0 28px; opacity: .92; }
+.cta { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #1b1035;
+  font-weight: 600; text-decoration: none; padding: 12px 20px; border-radius: 10px; }
+.cta:hover, .cta:focus-visible { background: #efe9ff; }
+.meta { margin-block-start: 20px; font-size: 14px; opacity: .8; }
+nav.toc { position: sticky; top: 0; z-index: 2; background: var(--surface);
+  border-block-end: 1px solid var(--line); }
+nav.toc ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; overflow-x: auto; }
+nav.toc a { display: flex; align-items: center; gap: 8px; white-space: nowrap; text-decoration: none;
+  color: var(--muted); font-size: 14px; padding: 14px 12px; border-block-end: 2px solid transparent; }
+nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); border-block-end-color: var(--accent); }
+.num { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); font-size: 12px; }
+main { padding-block: 40px 24px; }
+.block { background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: var(--shadow); padding: 28px; margin-block-end: 24px; scroll-margin-top: 64px; }
+.block-head { display: flex; gap: 18px; align-items: flex-start; margin-block-end: 18px; }
+.num.big { font-size: 15px; background: var(--accent-soft); border-radius: 10px; padding: 8px 10px; line-height: 1; }
+h2 { font-size: 22px; margin: 0 0 4px; }
+.block-head p { margin: 0; color: var(--muted); }
+ul.links { list-style: none; margin: 0; padding: 0; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+a.res { position: relative; display: flex; flex-direction: column; gap: 4px; height: 100%;
+  text-decoration: none; border: 1px solid var(--line); border-radius: 12px; padding: 14px 40px 14px 16px;
+  padding-inline: 16px 40px; transition: border-color .15s, background .15s; }
+a.res:hover, a.res:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
+a.res:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.label { font-weight: 600; }
+.short { font-size: 13px; color: var(--muted); font-family: Consolas, "SF Mono", Menlo, monospace; word-break: break-all; }
+.arrow { position: absolute; inset-inline-end: 14px; inset-block-start: 12px; color: var(--accent); font-size: 18px; }
+footer { color: var(--muted); font-size: 13px; padding-block: 8px 48px; }
+footer p { margin: 0 0 6px; }
+@media (max-width: 560px) { .block { padding: 20px; } .block-head { gap: 12px; } }
+@media print { nav.toc { display: none; } header.hero { background: none; color: #000; } .cta { border: 1px solid #000; } .block { box-shadow: none; break-inside: avoid; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="code">BRK382</span>Microsoft Ignite 2026</p>
+    <h1>Deploy and manage Power Platform at scale</h1>
+    <p class="lede">Thanks for joining the session. Here are the Microsoft Learn resources from the session, grouped by topic, so you can pick up where the talk left off.</p>
+    <a class="cta" href="https://ignite.microsoft.com/sessions/BRK382" target="_blank" rel="noopener">View the session on Microsoft Ignite <span aria-hidden="true">&#8599;</span></a>
+    <p class="meta">24 resources across 5 topics</p>
+  </div>
+</header>
+<nav class="toc" aria-label="Topics"><div class="wrap"><ul>
+<li><a href="#s01"><span class="num">01</span>Govern experimentation at scale</a></li>
+<li><a href="#s02"><span class="num">02</span>Deploy and operate production assets</a></li>
+<li><a href="#s03"><span class="num">03</span>Govern and secure agents</a></li>
+<li><a href="#s04"><span class="num">04</span>Understand and control AI spend</a></li>
+<li><a href="#s05"><span class="num">05</span>Extend and automate administration</a></li>
+</ul></div></nav>
+<main class="wrap">
+<section id="s01" class="block" aria-labelledby="h01">
+  <div class="block-head">
+    <span class="num big">01</span>
+    <div><h2 id="h01">Govern experimentation at scale</h2><p>Give makers a safe place to build, then see what they build.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://aka.ms/Learn/EnvironmentRouting" target="_blank" rel="noopener"><span class="label">Environment routing</span><span class="short">aka.ms/Learn/EnvironmentRouting</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/EnvironmentGroups" target="_blank" rel="noopener"><span class="label">Environment groups</span><span class="short">aka.ms/Learn/EnvironmentGroups</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/AdvancedConnectorPolicies" target="_blank" rel="noopener"><span class="label">Advanced connector policies</span><span class="short">aka.ms/Learn/AdvancedConnectorPolicies</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformInventory" target="_blank" rel="noopener"><span class="label">Power Platform inventory</span><span class="short">aka.ms/Learn/PowerPlatformInventory</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformUsage" target="_blank" rel="noopener"><span class="label">Usage page (preview)</span><span class="short">aka.ms/Learn/PowerPlatformUsage</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s02" class="block" aria-labelledby="h02">
+  <div class="block-head">
+    <span class="num big">02</span>
+    <div><h2 id="h02">Deploy and operate production assets</h2><p>Move solutions to production and keep them healthy.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://aka.ms/Learn/PowerPlatformALM" target="_blank" rel="noopener"><span class="label">Application lifecycle management (ALM) overview</span><span class="short">aka.ms/Learn/PowerPlatformALM</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformPipelines" target="_blank" rel="noopener"><span class="label">Pipelines in Power Platform</span><span class="short">aka.ms/Learn/PowerPlatformPipelines</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformGitIntegration" target="_blank" rel="noopener"><span class="label">Git integration</span><span class="short">aka.ms/Learn/PowerPlatformGitIntegration</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/MonitorResourceHealth" target="_blank" rel="noopener"><span class="label">Monitor resource health</span><span class="short">aka.ms/Learn/MonitorResourceHealth</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/MonitorAlerts" target="_blank" rel="noopener"><span class="label">Create alerts for your resources</span><span class="short">aka.ms/Learn/MonitorAlerts</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s03" class="block" aria-labelledby="h03">
+  <div class="block-head">
+    <span class="num big">03</span>
+    <div><h2 id="h03">Govern and secure agents</h2><p>Apply the right controls to agents, from tenant to environment.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://aka.ms/Learn/CopilotStudioGovernance" target="_blank" rel="noopener"><span class="label">Copilot Studio security and governance</span><span class="short">aka.ms/Learn/CopilotStudioGovernance</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/AgentZonedGovernance" target="_blank" rel="noopener"><span class="label">Implement a zoned governance strategy</span><span class="short">aka.ms/Learn/AgentZonedGovernance</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/GlobalSecureAccessAgents" target="_blank" rel="noopener"><span class="label">Global Secure Access for agents</span><span class="short">aka.ms/Learn/GlobalSecureAccessAgents</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/CopilotHubPPAC" target="_blank" rel="noopener"><span class="label">Copilot and agents in the Power Platform admin center</span><span class="short">aka.ms/Learn/CopilotHubPPAC</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s04" class="block" aria-labelledby="h04">
+  <div class="block-head">
+    <span class="num big">04</span>
+    <div><h2 id="h04">Understand and control AI spend</h2><p>Allocate, monitor and cap Copilot Credit consumption.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://aka.ms/Learn/CopilotCreditsCapacity" target="_blank" rel="noopener"><span class="label">Manage Copilot Credits and capacity</span><span class="short">aka.ms/Learn/CopilotCreditsCapacity</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/ManageAgentCosts" target="_blank" rel="noopener"><span class="label">Manage costs for agents</span><span class="short">aka.ms/Learn/ManageAgentCosts</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/GovernCreditConsumption" target="_blank" rel="noopener"><span class="label">Govern Copilot Credit consumption</span><span class="short">aka.ms/Learn/GovernCreditConsumption</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PayAsYouGoSetup" target="_blank" rel="noopener"><span class="label">Set up pay-as-you-go</span><span class="short">aka.ms/Learn/PayAsYouGoSetup</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/CopilotCreditAllocationsAPI" target="_blank" rel="noopener"><span class="label">Manage Copilot Credit allocations programmatically</span><span class="short">aka.ms/Learn/CopilotCreditAllocationsAPI</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s05" class="block" aria-labelledby="h05">
+  <div class="block-head">
+    <span class="num big">05</span>
+    <div><h2 id="h05">Extend and automate administration</h2><p>Script, automate and extend how you run the platform.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://aka.ms/Learn/PowerPlatformAPI" target="_blank" rel="noopener"><span class="label">Power Platform API reference</span><span class="short">aka.ms/Learn/PowerPlatformAPI</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformAPIAuth" target="_blank" rel="noopener"><span class="label">Authenticate to Power Platform APIs</span><span class="short">aka.ms/Learn/PowerPlatformAPIAuth</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PacAdmin" target="_blank" rel="noopener"><span class="label">Power Platform CLI: pac admin</span><span class="short">aka.ms/Learn/PacAdmin</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformAdminV2Connector" target="_blank" rel="noopener"><span class="label">Power Platform for Admins V2 connector</span><span class="short">aka.ms/Learn/PowerPlatformAdminV2Connector</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://aka.ms/Learn/PowerPlatformAdminCowork" target="_blank" rel="noopener"><span class="label">Power Platform Admin in Cowork (preview)</span><span class="short">aka.ms/Learn/PowerPlatformAdminCowork</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+</main>
+<footer class="wrap">
+  <p>Links open Microsoft Learn documentation through aka.ms short links. Features marked “preview” are subject to change.</p>
+  <p>Microsoft Ignite 2026 · Session BRK382</p>
+</footer>
+</body>
+</html>
