@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>BRK265 resources | Apps and agents: Business process transformation in Copilot Studio | Microsoft Ignite 2026</title>
+<meta name="description" content="Follow-up resources and speaker information for Microsoft Ignite 2026 session BRK265: Apps and agents: Business process transformation in Copilot Studio.">
+<style>
+:root {
+  --bg: #05072e; --surface: #101638; --surface-raised: #151d47; --ink: #f7f7ff;
+  --muted: #c1c6e1; --line: rgba(210,218,255,.18); --accent: #b6a0ff;
+  --accent-soft: #272052; --shadow: 0 12px 32px rgba(0,0,0,.2);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+.wrap { max-width: 1240px; margin-inline: auto; padding-inline: 32px; }
+header.hero { position: relative; overflow: hidden; background:
+  radial-gradient(ellipse at 82% 38%, rgba(100,50,207,.5), transparent 34%),
+  radial-gradient(ellipse at 88% 55%, rgba(0,164,239,.23), transparent 38%),
+  linear-gradient(110deg, #05072e 5%, #080b3a 62%, #101747 100%); }
+header.hero::after { position: absolute; inset: 0; content: ""; pointer-events: none; opacity: .16;
+  background-image: linear-gradient(rgba(139,160,255,.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139,160,255,.2) 1px, transparent 1px);
+  background-size: 84px 84px; mask-image: linear-gradient(90deg, transparent 25%, #000 100%); }
+.session-top-action { position: relative; z-index: 1; display: flex; justify-content: flex-end; padding-block-start: 20px; }
+.session-top-action a { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px;
+  border: 1px solid rgba(255,255,255,.75); border-radius: 8px; color: #fff; font-size: 13px;
+  font-weight: 600; text-decoration: none; }
+.session-top-action a:hover, .session-top-action a:focus-visible { background: rgba(255,255,255,.12); }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr);
+  gap: 64px; align-items: center; padding-block: 42px 72px; }
+.eyebrow { font-size: 14px; letter-spacing: .1em; text-transform: uppercase; color: #d7d4ff; margin: 0 0 16px; }
+.code { display: inline-block; font-weight: 700; background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.25); border-radius: 6px; padding: 3px 10px; margin-inline-end: 8px; }
+h1 { font-size: clamp(36px, 5vw, 58px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -.025em; max-width: 19ch; }
+.lede { font-size: 17px; max-width: 66ch; margin: 0 0 28px; color: #e0e3f5; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.cta { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #10122b;
+  font-weight: 600; text-decoration: none; padding: 12px 18px; border-radius: 8px; }
+.cta:hover, .cta:focus-visible { background: #e8e4ff; }
+.text-link { font-weight: 600; color: #f1efff; text-underline-offset: 4px; }
+.session-panel { padding: 26px; background: rgba(13,20,55,.78); border: 1px solid rgba(255,255,255,.15);
+  border-radius: 18px; box-shadow: var(--shadow); backdrop-filter: blur(12px); }
+.panel-label { color: #c6b8ff; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 14px; }
+.session-panel p { margin: 0; }
+.session-time { font-size: 19px; font-weight: 600; margin-block-end: 6px !important; }
+.session-note { color: var(--muted); font-size: 14px; }
+.session-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-block-start: 22px; }
+.session-tags span { padding: 6px 10px; background: rgba(255,255,255,.1); border-radius: 5px; font-size: 12px; font-weight: 600; }
+nav.toc { position: sticky; top: 0; z-index: 2; background: var(--surface);
+  border-block-end: 1px solid var(--line); }
+nav.toc ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+nav.toc ul::-webkit-scrollbar { display: none; }
+nav.toc a { display: flex; align-items: center; gap: 8px; white-space: nowrap; text-decoration: none;
+  color: var(--muted); font-size: 14px; padding: 14px 12px; border-block-end: 2px solid transparent; }
+nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); border-block-end-color: var(--accent); }
+.num { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); font-size: 12px; }
+main { padding-block: 40px 24px; }
+.speakers { margin-block-end: 44px; scroll-margin-top: 76px; }
+.section-title { margin: 0 0 6px; font-size: clamp(26px, 3vw, 34px); letter-spacing: -.02em; }
+.section-intro { color: var(--muted); margin: 0 0 22px; }
+.speaker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.speaker { display: flex; flex-direction: column; align-items: flex-start; min-height: 220px; padding: 22px;
+  background: linear-gradient(145deg, var(--surface-raised), var(--surface)); border: 1px solid var(--line);
+  border-radius: 14px; box-shadow: var(--shadow); }
+.speaker img { width: 92px; height: 92px; margin-block-end: 18px; border-radius: 50%; object-fit: cover;
+  border: 2px solid rgba(255,255,255,.32); background: #252b54; }
+.speaker h3 { font-size: 17px; margin: 0 0 3px; }
+.speaker p { color: var(--muted); font-size: 13px; margin: 0; }
+.speaker .company { color: #d3c7ff; font-size: 12px; margin-block-start: 8px; }
+.speaker-link { margin-block-start: 14px; color: #d7ceff; font-size: 13px; font-weight: 600; text-underline-offset: 3px; }
+.speaker-link:hover, .speaker-link:focus-visible { color: #fff; }
+.block { background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: var(--shadow); padding: 28px; margin-block-end: 24px; scroll-margin-top: 64px; }
+.block-head { display: flex; gap: 18px; align-items: flex-start; margin-block-end: 18px; }
+.num.big { font-size: 15px; background: var(--accent-soft); border-radius: 10px; padding: 8px 10px; line-height: 1; }
+h2 { font-size: 22px; margin: 0 0 4px; }
+.block-head p { margin: 0; color: var(--muted); }
+ul.links { list-style: none; margin: 0; padding: 0; display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+a.res { position: relative; display: flex; flex-direction: column; gap: 4px; height: 100%;
+  text-decoration: none; background: var(--surface-raised); border: 1px solid var(--line); border-radius: 12px; padding: 14px 40px 14px 16px;
+  padding-inline: 16px 40px; transition: border-color .15s, background .15s; }
+a.res:hover, a.res:focus-visible { border-color: var(--accent); background: var(--accent-soft); }
+a.res:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.label { font-weight: 600; }
+.short { font-size: 13px; color: var(--muted); font-family: Consolas, "SF Mono", Menlo, monospace; word-break: break-all; }
+.arrow { position: absolute; inset-inline-end: 14px; inset-block-start: 12px; color: var(--accent); font-size: 18px; }
+footer { color: var(--muted); font-size: 13px; padding-block: 8px 48px; }
+footer p { margin: 0 0 6px; }
+@media (max-width: 850px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 32px; padding-block: 58px; }
+}
+@media (max-width: 560px) {
+  .wrap { padding-inline: 20px; }
+  .session-top-action a { padding: 8px 10px; font-size: 12px; }
+  .hero-grid { padding-block: 34px 44px; }
+  .speaker-grid { grid-template-columns: 1fr; }
+  .speaker { min-height: 0; display: grid; grid-template-columns: 72px 1fr; column-gap: 16px; align-items: center; }
+  .speaker img { width: 72px; height: 72px; grid-row: span 4; margin: 0; }
+  .speaker .company { margin-block-start: 2px; }
+  .speaker-link { grid-column: 2; margin-block-start: 6px; }
+  .block { padding: 20px; }
+  .block-head { gap: 12px; }
+  ul.links { grid-template-columns: 1fr; }
+}
+@media print {
+  .session-top-action, nav.toc, .hero-actions { display: none; }
+  :root { --surface: #fff; --surface-raised: #fff; --ink: #111; --muted: #444; --line: #bbb; --accent: #4b2997; --accent-soft: #eee; --shadow: none; }
+  body, header.hero { background: #fff; color: #111; }
+  header.hero::after { display: none; }
+  .hero-grid { display: block; padding-block: 24px; }
+  .session-panel, .speaker, .block { background: #fff; color: #111; box-shadow: none; break-inside: avoid; }
+  .eyebrow, .panel-label, .session-note, .block-head p, .speaker p, .speaker .company { color: #333; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap session-top-action">
+    <a href="https://ignite.microsoft.com/en-US/sessions/BRK265" target="_blank" rel="noopener">View session on Microsoft Ignite site <span aria-hidden="true">&#8599;</span></a>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span class="code">BRK265</span>Microsoft Ignite 2026</p>
+      <h1>Apps and agents: Business process transformation in Copilot Studio</h1>
+      <p class="lede">Discover how Copilot Studio brings apps and agents together on one governed platform for business transformation. Learn how makers and developers can build with natural language, connect enterprise data and actions, and move solutions from idea to production.</p>
+      <div class="hero-actions">
+        <a class="cta" href="#s01">Explore session resources <span aria-hidden="true">&#8595;</span></a>
+        <a class="text-link" href="#speakers">Meet the speakers</a>
+      </div>
+    </div>
+    <aside class="session-panel" aria-label="Session details">
+      <p class="panel-label">Session details</p>
+      <p class="session-time">Wednesday, November 18</p>
+      <p class="session-note">10:15 AM–11:00 AM Pacific Time</p>
+      <div class="session-tags"><span>In person + online</span><span>Will be recorded</span></div>
+    </aside>
+  </div>
+</header>
+<nav class="toc" aria-label="Page sections"><div class="wrap"><ul>
+<li><a href="#speakers"><span class="num">00</span>Speakers</a></li>
+<li><a href="#s01"><span class="num">01</span>Build apps and agents</a></li>
+<li><a href="#s02"><span class="num">02</span>Automate business processes</a></li>
+<li><a href="#s03"><span class="num">03</span>Connect data and actions</a></li>
+<li><a href="#s04"><span class="num">04</span>Govern and launch solutions</a></li>
+</ul></div></nav>
+<main class="wrap">
+<section id="speakers" class="speakers" aria-labelledby="speakers-heading">
+  <h2 class="section-title" id="speakers-heading">Meet the speakers</h2>
+  <p class="section-intro">Meet the Microsoft leaders sharing how apps and agents transform business processes.</p>
+  <div class="speaker-grid">
+    <article class="speaker">
+      <img src="https://rainfocus-static.azure.rainfocus.com/microsoft/ignite27/att/1768410941073001BH57/attprofile/ash%201_1790668984557001mOym.jpg" alt="Ashvini Sharma" loading="lazy">
+      <h3>Ashvini Sharma</h3><p>Director of Product Management</p><p class="company">Microsoft</p>
+      <a class="speaker-link" href="https://ignite.microsoft.com/en-US/speakers/177730559163ignite27-1768410941073001BH57?source=/sessions/BRK265" target="_blank" rel="noopener" aria-label="Ashvini Sharma on Microsoft Ignite">Ignite speaker profile <span aria-hidden="true">&#8599;</span></a>
+    </article>
+    <article class="speaker">
+      <img src="https://rainfocus-static.azure.rainfocus.com/microsoft/ignite27/att/1789776732146001drZ2/attprofile/CLWESENE-BW2_1790744954719001PPYt.jpg" alt="Clay Wesener" loading="lazy">
+      <h3>Clay Wesener</h3><p>General Manager, Apps in Copilot</p><p class="company">Microsoft</p>
+      <a class="speaker-link" href="https://www.linkedin.com/in/claywesener/" target="_blank" rel="noopener" aria-label="Clay Wesener on LinkedIn">LinkedIn profile <span aria-hidden="true">&#8599;</span></a>
+    </article>
+  </div>
+</section>
+<section id="s01" class="block" aria-labelledby="h01">
+  <div class="block-head">
+    <span class="num big">01</span>
+    <div><h2 id="h01">Build apps and agents</h2><p>Start with the Copilot Studio building blocks and create apps and agents with natural language.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio" target="_blank" rel="noopener"><span class="label">Microsoft Copilot Studio overview</span><span class="short">learn.microsoft.com/.../fundamentals-what-is-copilot-studio</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/apps-experience/apps-overview" target="_blank" rel="noopener"><span class="label">Apps in Copilot Studio (preview)</span><span class="short">learn.microsoft.com/.../apps-experience/apps-overview</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/apps-experience/create-app" target="_blank" rel="noopener"><span class="label">Create an app with natural language</span><span class="short">learn.microsoft.com/.../apps-experience/create-app</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview" target="_blank" rel="noopener"><span class="label">Copilot Studio agents overview</span><span class="short">learn.microsoft.com/.../agents-overview</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/authoring-first-bot" target="_blank" rel="noopener"><span class="label">Start building in Copilot Studio</span><span class="short">learn.microsoft.com/.../agents-experience/authoring-first-bot</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s02" class="block" aria-labelledby="h02">
+  <div class="block-head">
+    <span class="num big">02</span>
+    <div><h2 id="h02">Automate business processes</h2><p>Bring together agents, workflows, and predictable automation for end-to-end work.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/workflows-experience/flows-overview" target="_blank" rel="noopener"><span class="label">Workflows in Copilot Studio</span><span class="short">learn.microsoft.com/.../workflows-experience/flows-overview</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/create-automation-natural-language" target="_blank" rel="noopener"><span class="label">Create an automated solution with natural language (preview)</span><span class="short">learn.microsoft.com/.../create-automation-natural-language</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview" target="_blank" rel="noopener"><span class="label">Use agents in business processes</span><span class="short">learn.microsoft.com/.../agents-overview</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s03" class="block" aria-labelledby="h03">
+  <div class="block-head">
+    <span class="num big">03</span>
+    <div><h2 id="h03">Connect data and actions</h2><p>Ground solutions in business context and let them work across systems.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-what-is-copilot-studio" target="_blank" rel="noopener"><span class="label">Connect agents to data and services</span><span class="short">learn.microsoft.com/.../fundamentals-what-is-copilot-studio</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-overview" target="_blank" rel="noopener"><span class="label">Connect agents to tools and business systems</span><span class="short">learn.microsoft.com/.../agents-overview</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/integrations" target="_blank" rel="noopener"><span class="label">Plan integration strategies for Copilot Studio</span><span class="short">learn.microsoft.com/.../guidance/integrations</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+<section id="s04" class="block" aria-labelledby="h04">
+  <div class="block-head">
+    <span class="num big">04</span>
+    <div><h2 id="h04">Govern and launch solutions</h2><p>Apply shared security, governance, and lifecycle practices as you publish apps and agents.</p></div>
+  </div>
+  <ul class="links"><li><a class="res" href="https://aka.ms/Learn/CopilotStudioGovernance" target="_blank" rel="noopener"><span class="label">Copilot Studio security and governance</span><span class="short">aka.ms/Learn/CopilotStudioGovernance</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/apps-experience/publish-share-app" target="_blank" rel="noopener"><span class="label">Publish and share an app (preview)</span><span class="short">learn.microsoft.com/.../apps-experience/publish-share-app</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li>
+<li><a class="res" href="https://learn.microsoft.com/en-us/power-platform/alm/overview-alm" target="_blank" rel="noopener"><span class="label">Power Platform application lifecycle management</span><span class="short">learn.microsoft.com/.../power-platform/alm/overview-alm</span><span class="arrow" aria-hidden="true">&#8599;</span></a></li></ul>
+</section>
+</main>
+<footer class="wrap">
+  <p>Links open Microsoft Learn documentation. Features marked “preview” are subject to change.</p>
+  <p>Microsoft Ignite 2026 · Session BRK265</p>
+</footer>
+</body>
+</html>
